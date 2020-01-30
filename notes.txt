@@ -40,3 +40,28 @@ libC.a   static library
     .o   dynamic library
 
 
+```C
+
+#include <stdio.h>
+#include "my file in this directory.h"
+
+// always put literal constants in the compiler definitions - good practice:
+#define PI 3.14159
+
+
+double n = 2.0; // this double is in global space
+
+
+int main(int argc, char *argv[], char **envp[])
+//    argc = count of args      
+{
+    int d = 5;
+    double m = 2.3;
+    
+    
+    return 0;
+}
+
+```
+
+
