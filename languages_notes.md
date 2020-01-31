@@ -2,9 +2,9 @@
 
 
 ### 3 Gross Domains:
-    Business	Scientific	System
-        |                |           | | |
-      COBOL           Fortran        A B C
+    Business        Scientific       System
+        |                |           |  |  |
+      COBOL           Fortran        A  B  C
 
 
 -----------------------------
@@ -84,7 +84,7 @@ Arrays are just adding pointers:
 
 ----
 
-```
+```C
 int *A;
 int B;
 
