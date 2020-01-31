@@ -1,16 +1,14 @@
 ## LANGUAGES
-===============
 
 
 ### 3 Gross Domains:
-------------------------
 Business	Scientific	System
     |                |           | | |
   COBOL           Fortran        A B C
 
 
-Considerations for Languages:
------------------------------ 
+-----------------------------
+### Considerations for Languages:
 Community               Redibility
 Portability             Readability
 Performance-Cost        Writeability
@@ -27,17 +25,24 @@ Java Virtual Machine is a *Stack Machine*
 a = 2 + 6
 
 stack:
+
  6
+
  2
+
  +
+
  a
+
  =
+
 ---
 
 
-C language:
-libC.a   static library
-    .o   dynamic library
+## C language:
+
+| libC.a | static library  |
+|     .o | dynamic library |
 
 
 ```C
@@ -63,5 +68,9 @@ int main(int argc, char *argv[], char **envp[])
 }
 
 ```
+
+
+### Data Types:
+![C Data Types Table](Various-Data-Type-in-C.jpg)
 
 
