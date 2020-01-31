@@ -53,8 +53,9 @@ Java Virtual Machine is a **Stack Machine**
 double n = 2.0; // this double is in global space
 
 
-int main(int argc, char *argv[], char **envp[])
-//    argc = count of args      
+int main(int argc, char *argv[], char *envp[])
+//    argc == count of args      
+//    char *envp[] == char **envp == pointer to a pointer to a char == array of pointers to a char
 {
     int d = 5;
     double m = 2.3;
@@ -75,5 +76,20 @@ Struct stores all specified types,
 while Union stores the biggest of all types, changing the actual stored 
 type dynamically within the one allocated space.
 
+--------
 
+Arrays are just adding pointers:
+
+A[3] == 3[A] == (&A + 3)
+
+----
+
+int *A;
+int B;
+
+(*A) = 3;
+B = *A;  // B == 3;
+
+B = 4;
+(*A) = B;  // *A == 4;
 
