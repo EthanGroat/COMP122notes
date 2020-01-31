@@ -20,29 +20,25 @@ Type coercion - a weakly typed notion:
 (float)3 + 2.0 = 5.0
 
 
-Java Virtual Machine is a *Stack Machine*
+Java Virtual Machine is a **Stack Machine**
 
-a = 2 + 6
+ a = 2 + 6
 
-stack:
+#### stack:
 
- 6
-
- 2
-
- +
-
- a
-
- =
+     6
+     2
+     +
+     a
+     =
 
 ---
 
 
 ## C language:
 
-| libC.a | static library  |
-|     .o | dynamic library |
+    libC.a   static library
+        .o   dynamic library
 
 
 ```C
@@ -72,5 +68,12 @@ int main(int argc, char *argv[], char **envp[])
 
 ### Data Types:
 ![C Data Types Table](Various-Data-Type-in-C.jpg)
+
+
+### Unions to implement polymorphism:
+Struct stores all specified types, 
+while Union stores the biggest of all types, changing the actual stored 
+type dynamically within the one allocated space.
+
 
 

@@ -18,7 +18,12 @@ the class of processing power (class of problems it can solve) will not change.
 ### Von Neumann Architecture:
 ![Von Neumann Architecture Diagram](Von_Neumann_Architecture.svg)
 
-![Harvard Architecture Diagram]
+---
+
+### Harvard Architecture:
+![Harvard Architecture Diagram](Harvard%20computer%20architecture.svg)
+
+---
 
 ![Memory-Mapped I/O Diagram]
 
