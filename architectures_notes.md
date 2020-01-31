@@ -27,5 +27,9 @@ the class of processing power (class of problems it can solve) will not change.
 
 ![Memory-Mapped I/O Diagram]
 
+---
+
+### MIPS program layout:
+![MIPS Program Layout](memory_diagram.png)
 
 
