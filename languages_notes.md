@@ -2,27 +2,27 @@
 
 
 ### 3 Gross Domains:
-Business	Scientific	System
-    |                |           | | |
-  COBOL           Fortran        A B C
+    Business        Scientific       System
+        |                |           |  |  |
+      COBOL           Fortran        A  B  C
 
 
 -----------------------------
 ### Considerations for Languages:
-Community               Redibility
-Portability             Readability
-Performance-Cost        Writeability
-                        Security
-                        Cost
+    Community               Redibility
+    Portability             Readability
+    Performance-Cost        Writeability
+                            Security
+                            Cost
 
 
 Type coercion - a weakly typed notion:
-(float)3 + 2.0 = 5.0
+    (float)3 + 2.0 = 5.0
 
 
 Java Virtual Machine is a **Stack Machine**
 
- a = 2 + 6
+    a = 2 + 6
 
 #### stack:
 
@@ -50,12 +50,12 @@ Java Virtual Machine is a **Stack Machine**
 #define PI 3.14159
 
 
-double n = 2.0; // this double is in global space
+double n = 2.0;  // this double is in global space
 
 
 int main(int argc, char *argv[], char *envp[])
 //    argc == count of args      
-//    char *envp[] == char **envp == pointer to a pointer to a char == array of pointers to a char
+//    char *envp[] == char **envp == pointer to a pointer to a char == array of pointers to chars
 {
     int d = 5;
     double m = 2.3;
@@ -80,10 +80,11 @@ type dynamically within the one allocated space.
 
 Arrays are just adding pointers:
 
-A[3] == 3[A] == (&A + 3)
+`A[3] == 3[A] == (&A + 3)`
 
 ----
 
+```C
 int *A;
 int B;
 
@@ -92,6 +93,7 @@ B = *A;  // B == 3;
 
 B = 4;
 (*A) = B;  // *A == 4;
+```
 
 -----------------------------
 
