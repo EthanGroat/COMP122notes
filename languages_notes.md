@@ -93,3 +93,32 @@ B = *A;  // B == 3;
 B = 4;
 (*A) = B;  // *A == 4;
 
+-----------------------------
+
+## C "Hello World"
+
+Show contents of the header file and other useful tools for the shell:
+```bash
+cat /usr/include/unistd.h
+
+man write
+man -k write
+man 2 write
+man read
+```
+
+
+```C
+#include <unistd.h>
+
+char *string = "Hello world!\n"
+
+// string++;  // increments pointer to the next memory location
+
+int main(int argc, char *argv[], char **envp)
+{
+
+    return write(1, (void *)string, 12);
+
+}
+```
