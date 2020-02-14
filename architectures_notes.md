@@ -70,6 +70,7 @@ memory, increments itself by one unless there is a jump
 IR: Instruction Register; machine automatically populates with 
 next instruction from the Program Counter
 
+example:
         | dest  | inp1  | inp2  |       more stuff      |  reserved   |
         | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 
 
@@ -77,5 +78,7 @@ next instruction from the Program Counter
 ### Three address code
 
 <b>    a = [b] (f) [c]    </b>
+
+----
 
 
