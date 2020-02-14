@@ -46,5 +46,36 @@ and memory layout in MIPS.
 Also
 [AssemblyLanguageTuts' article MIPS Registers Explained](https://www.assemblylanguagetuts.com/mips-registers-table/)
 
----
+
+--------
+
+
+## Alignment
+
+Base types in C:
+int, float, double, char, pointer
+
+Derived types can be made with struct
+
+----
+
+ALUs have shifters: shifting multiplies/divides by powers of 2
+ex: 1000/10 = 100
+
+### Registers
+
+PC: Program Counter: pointer to the next instruction from main 
+memory, increments itself by one unless there is a jump
+
+IR: Instruction Register; machine automatically populates with 
+next instruction from the Program Counter
+
+        | dest  | inp1  | inp2  |       more stuff      |  reserved   |
+        | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 
+
+
+### Three address code
+
+<b>    a = [b] (f) [c]    </b>
+
 

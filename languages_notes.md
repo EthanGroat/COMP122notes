@@ -128,3 +128,36 @@ int main(int argc, char *argv[], char **envp)
 
 }
 ```
+
+--------
+
+```
+  lval    vs    rval
+
+ address  vs   value
+
+   &a     vs     a
+
+    a     =      b
+```
+
+----
+
+assign to address of something in C:
+```C
+a = &b // asigns value at &a to address of b (&b)
+```
+
+in bash it's opposite:
+```
+rval
+$home
+
+lval
+home
+```
+
+--------
+
+
+
