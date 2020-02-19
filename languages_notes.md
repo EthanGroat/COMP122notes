@@ -192,7 +192,8 @@ Shift operators:
 
       <<    left (logical)
       >>    right (logical)
-      >>>   arithmetic right shift
+      >>>   arithmetic right shift (in Java) (represented in C by >> and automatically applied based on the types)
+      circular shifts (C does not have a primitive operation for this, but many assembly languages do)
 
 ```C
 a = 0b01011011;
