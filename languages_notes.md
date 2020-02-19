@@ -99,17 +99,6 @@ B = 4;
 
 ## C "Hello World"
 
-Show contents of the header file and other useful tools for the shell:
-```bash
-cat /usr/include/unistd.h
-
-man write
-man -k write
-man 2 write
-man read
-```
-
-
 ```C
 #include <unistd.h>
 
@@ -121,15 +110,27 @@ int main(int argc, char *argv[], char **envp)
 {
 
     return write(1, (void *)string, 12);
-// file descriptor 1 is stdout
-// const void *string is the buffer, which not going to be modified (const)
-// size_t 12 is the length requested to write
-// check these with the man command - it specifies how to use the API.
+/* file descriptor 1 is stdout
+ * const void *string is the buffer, which not going to be modified (const)
+ * size_t 12 is the length requested to write
+ * check these with the man command - it specifies how to use the API.
+ */
 
 }
 ```
 
+Show contents of the header file and other useful tools for the shell:
+```bash
+cat /usr/include/unistd.h
+
+man write
+man -k write
+man 2 write
+man read
+```
+
 --------
+
 
 ```
   lval    vs    rval
@@ -140,8 +141,6 @@ int main(int argc, char *argv[], char **envp)
 
     a     =      b
 ```
-
-----
 
 assign to address of something in C:
 ```C
@@ -207,6 +206,7 @@ So to find a negative number, these two are equivalent:
 
 ```C
 -a == (~a) + 1
+/* this works for negative as well as positive numbers (and zero) */
 ```
 
 ----
