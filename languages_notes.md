@@ -160,4 +160,60 @@ home
 --------
 
 
+## Files
+
+file descriptor is an int
+
+default values that are already open are 0, 1, 2
+(standard input, standard output, and standard error)
+
+you can open new files with:
+```C
+int newfile;  // file descriptor
+newfile = open("filename", "r/*r,w*/", )
+close(newfile);
+```
+
+----
+
+Note: get good at bit shifting!
+(multiplication and division)
+ - it helps with converting numbers!
+
+----
+
+Bitwise logic operators: (work at the bit level)
+
+      |     or
+      &     and
+      ^     xor
+      ~     not
+
+Shift operators:
+
+      <<    left (logical)
+      >>    right (logical)
+      >>>   arithmetic right shift
+
+```C
+a = 0b01011011;
+a<<1; // 10110110
+a>>3; // 00010110
+```
+
+We use 2's compliment to represent negative numbers and have a total order.
+2's compliment is just 1's compliment plus one, and 1's comp is just bitwise negation.
+So to find a negative number, these two are equivalent:
+
+```C
+-a == (~a) + 1
+```
+
+----
+
+Note: review complement, it's confusing.
+(1's comp, 2's comp, 10's comp, etc.)
+
+
+
 
