@@ -71,6 +71,7 @@ IR: Instruction Register; machine automatically populates with
 next instruction from the Program Counter
 
 example:
+
         | dest  | inp1  | inp2  |       more stuff      |  reserved   |
         | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 
 
@@ -79,6 +80,6 @@ example:
 
 <b>    a = [b] (f) [c]    </b>
 
-----
+--------
 
 
