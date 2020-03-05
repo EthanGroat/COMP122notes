@@ -212,9 +212,48 @@ So to find a negative number, these two are equivalent:
 
 ----
 
-Note: review complement, it's confusing.
+Note: review complement (the mathematical concept), it's confusing.
 (1's comp, 2's comp, 10's comp, etc.)
 
 
+--------
+
+
+# base 64
+
+MIME standard uses base 64 to encode text, mapping to a 
+subset of the ascii table.
+
+use least common multiple to obtain 6 bit characters from 8 
+bit segments:
+```
+6 * 4 = 24
+8 * 3 = 24
+lcm(6,8) = 24
+```
+So we have 24-bit (3 byte) segments to read at a time and 
+convert from 6-bit base 64 characters into 8-bit ascii 
+characters.
+```C
+char a, b, c;
+char v[3] = {a, b, c};
+char w. x. y. z;
+char u[4];
+```
+
+Use bit masks to get a longer, 4 byte pattern of the same 
+4 characters:
+```C
+z = v & 0x3F;
+y = v & (0x3F << 6);
+x = v & (0x3F << 12);
+w = v & (0x3F << 18);
+
+/* Then convert by lookup table (not shown)... */
+
+u = w | x | y | z;
+```
+
+--------
 
 
