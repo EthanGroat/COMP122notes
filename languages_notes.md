@@ -290,3 +290,8 @@ alignment,
 packing vs. padding,
 endianness
 
+
+Big Endian: biggest digit on bottom
+Little Endian: least significant digit on bottom
+
+
