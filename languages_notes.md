@@ -257,3 +257,36 @@ u = w | x | y | z;
 --------
 
 
+STATIC variable means the location in memory does not change.
+
+| Mem Location   |  Type of Stuff               |
+|----------------|------------------------------|
+| HEAP           |  dynamic variables           |
+| STACK          |  subroutines, auto variables |
+| TEXT           |  code                        |
+| DATA           |  static variables            |
+
+
+modifiers:
+
+static, auto, extern, 
+  register, volatile
+
+* static methods are specific to the box you put them in.
+* extern methods are accessible elsewhere in the program.
+* static variables exist in one location throughout the 
+    runtime of the program.
+* auto variables are allocated at runtime.
+* register variables are actually stored in a register 
+    (much faster)
+* volatile variables are in shared memory and can be accessed
+    and modified by other programs.
+
+
+Data:
+types,
+qualifier,
+alignment,
+packing vs. padding,
+endianness
+
