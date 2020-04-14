@@ -291,7 +291,7 @@ packing vs. padding,
 endianness
 
 
-Big Endian: biggest digit on bottom
-Little Endian: least significant digit on bottom
+Big Endian: biggest digit on bottom (first)
+Little Endian: least significant digit on bottom (first)
 
 
